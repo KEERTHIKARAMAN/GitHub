@@ -1,29 +1,33 @@
 var ball ;
 
 function setup () {
-createCanvas(900,900);
+createCanvas(1600,750);
 
-ball=createSprite(200,200,50,50)
+ball=createSprite(750,380,50,50)
 }
 
 function draw () {
-  background("cyan");
+  background("crimson");
 
 if (keyIsDown(RIGHT_ARROW)){
-ball.position.x=ball.position.x+5;
+  background ("magenta");
 }
 
 if (keyIsDown(LEFT_ARROW)){
-  ball.position.x=ball.position.x-5;
+  background ("aqua");
   }
 
   if (keyIsDown(UP_ARROW)){
-    ball.position.y=ball.position.y-5;
+    background ("yellow");
     }
 
     if (keyIsDown(DOWN_ARROW)){
-      ball.position.y=ball.position.y+5;
+      background ("springgreen");
       }
 
 drawSprites() ;
 }
+
+
+
+
